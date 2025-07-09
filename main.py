@@ -1,17 +1,8 @@
-import random
+from consts import HANGMAN_ASCII_ART, MAX_TRIES
 
-print("Welcome to the game Hangman")
+def main():
+    print(HANGMAN_ASCII_ART + str(MAX_TRIES))
 
-print(r"""
-    _    _                                             
-   | |  | |                                            
-   | |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __      
-   |  __  |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \     
-   | |  | | (_| | | | | (_| | | | | | | (_| | | | |    
-   |_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|    
-                        __/ |                          
-                       |___/                           
-""")
 
-allowed_tries = random.randint(5, 10)
-print(allowed_tries)
+if __name__ == "__main__":
+    main()
